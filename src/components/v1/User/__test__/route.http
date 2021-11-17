@@ -1,0 +1,47 @@
+GET http://localhost:3000
+Content-Type: application/json
+#####
+
+GET http://localhost:3000/api/v1/users
+Content-Type: application/json
+####
+
+POST http://localhost:3000/api/v1/users
+Content-Type: application/json
+
+{
+    "phoneNumber": "08058212753",
+    "password": "123456"
+}
+#########
+
+POST http://localhost:3000/api/v1/users/signin
+Content-Type: application/json
+
+{
+    "phoneNumber": "08058212753",
+    "password": "123456"
+}
+########
+
+POST http://localhost:3000/api/v1/users/gender
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MThhNzhkZjY0YjNiNTMzZDkwZmExMTYiLCJwaG9uZU51bWJlciI6IisyMzQ4MDU4MjEyNzUzIiwib3RwIjoiJDJiJDEwJEhGVlpHNW9QcUFrZUdhczBRZ2FOeS5FLnVhRm5WSDExandXeVBJQWZ6VGo3ZVpPYTZiRVdtIiwiaXNWZXJpZmllZCI6ZmFsc2UsImlhdCI6MTYzNjQ2NjE5OH0.Rscf75pa_WJB3e5hpVMKWU0YM1Rawd4SSM20w-OquFM
+
+{
+    "gender": "male"
+}
+#############
+
+POST http://localhost:3000/api/v1/users/full-name
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MThhNzhkZjY0YjNiNTMzZDkwZmExMTYiLCJwaG9uZU51bWJlciI6IisyMzQ4MDU4MjEyNzUzIiwib3RwIjoiJDJiJDEwJEhGVlpHNW9QcUFrZUdhczBRZ2FOeS5FLnVhRm5WSDExandXeVBJQWZ6VGo3ZVpPYTZiRVdtIiwiaXNWZXJpZmllZCI6ZmFsc2UsImlhdCI6MTYzNjQ2NjE5OH0.Rscf75pa_WJB3e5hpVMKWU0YM1Rawd4SSM20w-OquFM
+
+{
+    "fullName": "Aderemi Dare"
+}
+#############
+
+GET http://localhost:3000/api/v1/users/profile
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MThiYmYzZWZkYzdlMGRlZjJjMDk3ZGEiLCJwaG9uZU51bWJlciI6IisyMzQ4MDk2OTg3NDEyIiwib3RwIjoiIiwiaXNWZXJpZmllZCI6dHJ1ZSwiaWF0IjoxNjM2NTUzMjQwfQ.FNV9HI64CbmMgiNr7G5byJpApiJm1O1uhhE9VRu17bQ

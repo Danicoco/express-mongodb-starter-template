@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "typeRoots": ["./node_modules/@types", "./src/types"],
+      "target": "es6",
+      "module": "commonjs",
+      "outDir": "./build",
+      "rootDir": "./src",
+      "strict": true,
+      // "alwaysStrict": true,
+      "sourceMap": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitReturns": false,
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+    }
+  }
+  
